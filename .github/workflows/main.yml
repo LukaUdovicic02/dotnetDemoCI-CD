@@ -20,11 +20,11 @@ jobs:
           dotnet-version: '7.0.x'
 
       - name: Restore
-        run: dotnet restore ./BPR2Test.sln
+        run: dotnet restore ./BPR2Test/BPR2Test.sln
 
       - name: Build
-        run: dotnet build ./BPR2Test.sln --configuration Release --no-restore
+        run: dotnet build ./BPR2Test/BPR2Test.sln --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./BPR2Test.sln --configuration Release --no-build
+        run: dotnet publish ./BPR2Test/BPR2Test.sln --configuration Release --no-build
        
