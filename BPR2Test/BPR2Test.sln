@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{73474F82-18AF-4271-B815-00B28E9C94BD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CI-CD-testv3", "CI-CD-testv3\CI-CD-testv3.csproj", "{305F4A80-D55D-45A8-B72B-65FCEDBA87AA}"
 EndProject
 Global
@@ -10,10 +8,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73474F82-18AF-4271-B815-00B28E9C94BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73474F82-18AF-4271-B815-00B28E9C94BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73474F82-18AF-4271-B815-00B28E9C94BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73474F82-18AF-4271-B815-00B28E9C94BD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{305F4A80-D55D-45A8-B72B-65FCEDBA87AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{305F4A80-D55D-45A8-B72B-65FCEDBA87AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{305F4A80-D55D-45A8-B72B-65FCEDBA87AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
