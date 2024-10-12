@@ -32,7 +32,7 @@ jobs:
           az acr login --name ${{ env.AZURE_CONTAINER_REGISTRY }}
 
          
-          docker build -t ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }} ./CI-CD-testv3
+          docker build -t ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }} ./BPR2Test/CI-CD-testv3
 
           
           docker push ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }}
