@@ -10,7 +10,7 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copy the entire solution and restore dependencies
-COPY ["BPR2Test.sln", "."]
+COPY ["BPR2Test.sln", "./"]
 COPY ["CI-CD-testv3/CI-CD-testv3.csproj", "CI-CD-testv3/"]
 COPY ["Shared/Shared.csproj", "Shared/"]
 RUN dotnet restore
