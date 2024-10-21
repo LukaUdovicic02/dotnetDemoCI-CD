@@ -30,7 +30,7 @@ jobs:
           docker build -t ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }} -f ./BPR2Test/CI-CD-testv3/Dockerfile ./BPR2Test
           docker push ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }}
 
-      - name: Deploy to Azure Web App
+      - name: Deploy to Azure WebApp
         uses: azure/webapps-deploy@v2
         with: 
           app-name: "${{ env.AZURE_WEBAPP_NAME }}"
