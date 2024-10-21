@@ -10,7 +10,7 @@ env:
   AZURE_WEBAPP_NAME: BPR2Test
   AZURE_CONTAINER_REGISTRY: bpr2testregistry.azurecr.io
   DOCKER_IMAGE_NAME: bpr2test
-  DOCKER_TAG: latest  
+  DOCKER_TAG: latest   
 
 jobs:
   build-and-deploy:
