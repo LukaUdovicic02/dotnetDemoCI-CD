@@ -27,7 +27,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           az acr login --name ${{ env.AZURE_CONTAINER_REGISTRY }}
-          docker build -t ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }} -f ./BPR2Test/CI-CD-testv3/Dockerfile ./BPR2Test
+          docker build -t ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }} ./BPR2Test/CI-CD-testv3
           docker push ${{ env.AZURE_CONTAINER_REGISTRY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_TAG }}
 
       - name: Deploy to Azure Web App
