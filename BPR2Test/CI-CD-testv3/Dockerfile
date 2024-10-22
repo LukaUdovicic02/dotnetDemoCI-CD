@@ -4,6 +4,9 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
+# Set the environment variable to listen on port 80
+ENV ASPNETCORE_URLS=http://+:80
+
 # Use the .NET 6 SDK for building the application
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
